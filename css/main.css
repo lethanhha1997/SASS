@@ -523,10 +523,15 @@ header .container-fluid .port .navbar-collapse {
   }
 }
 footer {
+  height: auto;
   background-image: url(../image/footer_background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+footer .footer-width {
+  max-width: 1240px;
+  margin: 0 auto;
 }
 footer .row {
   padding: 130px 0 200px;
@@ -623,6 +628,9 @@ footer .title-footer h5 {
 }
 @media screen and (max-width: 768px) {
   .title-footer h5 {
-    margin-top: 50px;
+    margin-top: 0px;
+  }
+  .row {
+    padding: 0;
   }
 }/*# sourceMappingURL=main.css.map */

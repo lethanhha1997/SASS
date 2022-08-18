@@ -1,8 +1,13 @@
 footer{
+    height: auto;
     background-image: url(../image/footer_background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position:center ;
+    .footer-width{
+        max-width: 1240px;
+        margin: 0 auto;
+    }
     .row{
         padding: 130px 0 200px;
     }
@@ -12,8 +17,7 @@ footer{
         h5{
             @include styleText($fs-5 +0.4,$fw-7,$color-white);
             padding: 24px 0;
-        }
-        
+        }        
     }
 }
 .content-footer{
@@ -99,8 +103,10 @@ footer{
 }
 @include responsive("medium") {
     .title-footer h5{
-        margin-top: 50px;
+        margin-top: 0px;
+    }
+    .row{
+        padding: 0;
     }
 }
-@include responsive("small") {}
 

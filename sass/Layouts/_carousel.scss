@@ -85,11 +85,9 @@
     .img-carousel{
         padding-bottom: 10%;
     }
-    .img-bottom{
-        img{
-            // transform: translateY(1331px);
-        }
-    }
+    // .img-bottom{
+       
+    // }
 }
 @include responsive("medium") {
     .content-carousel{
@@ -101,11 +99,11 @@
     .img-carousel{
         padding-bottom: 30%;
     }
-    .img-bottom{
-        img{
-            // transform: translateY(668px);
-        }
-    }
+    // .img-bottom{
+    //     // img{
+    //     //     // transform: translateY(668px);
+    //     // }
+    // }
 }
 @include responsive("small") {
     .content-carousel{
@@ -117,10 +115,10 @@
     .img-carousel{
         padding-bottom: 50%;
     }
-    .img-bottom{
-        img{
-            // transform: translateY(372px);
-        }
-    }
+    // .img-bottom{
+    //     img{
+    //         // transform: translateY(372px);
+    //     }
+    // }
 
 }  
