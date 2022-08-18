@@ -56,6 +56,7 @@ header .container-fluid .port .navbar-collapse {
 
 .navbar {
   height: 80px;
+  padding-top: 0;
 }
 .navbar img {
   width: 80px;
@@ -165,7 +166,7 @@ header .container-fluid .port .navbar-collapse {
   z-index: 3;
 }
 .about-carousel .container-fluid .content {
-  max-width: 1210px;
+  max-width: 1200px;
   padding: 16px 0;
   display: flex;
   justify-content: center;
