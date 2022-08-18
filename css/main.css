@@ -135,6 +135,7 @@ header .container-fluid .port .navbar-collapse {
 .about-carousel {
   width: 100%;
   padding: 50px 0 40px;
+  position: relative;
 }
 .about-carousel .img-top {
   position: absolute;
@@ -221,9 +222,6 @@ header .container-fluid .port .navbar-collapse {
   .img-carousel {
     padding-bottom: 10%;
   }
-  .img-bottom img {
-    transform: translateY(1331px);
-  }
 }
 @media screen and (max-width: 768px) {
   .content-carousel {
@@ -235,9 +233,6 @@ header .container-fluid .port .navbar-collapse {
   .img-carousel {
     padding-bottom: 30%;
   }
-  .img-bottom img {
-    transform: translateY(668px);
-  }
 }
 @media screen and (max-width: 576px) {
   .content-carousel {
@@ -248,9 +243,6 @@ header .container-fluid .port .navbar-collapse {
   }
   .img-carousel {
     padding-bottom: 50%;
-  }
-  .img-bottom img {
-    transform: translateY(372px);
   }
 }
 .products {

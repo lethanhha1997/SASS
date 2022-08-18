@@ -1,6 +1,7 @@
 .about-carousel{
     width: 100%;
     padding: 50px 0 40px;
+    position: relative;
     .img-top {
         position: absolute;
         left: 0;
@@ -86,7 +87,7 @@
     }
     .img-bottom{
         img{
-            transform: translateY(1331px);
+            // transform: translateY(1331px);
         }
     }
 }
@@ -102,7 +103,7 @@
     }
     .img-bottom{
         img{
-            transform: translateY(668px);
+            // transform: translateY(668px);
         }
     }
 }
@@ -118,7 +119,7 @@
     }
     .img-bottom{
         img{
-            transform: translateY(372px);
+            // transform: translateY(372px);
         }
     }
 
