@@ -1,0 +1,31 @@
+// File chứa các đường dẫn đến file con
+// chỉ import đường dẫn đến các file con, không viết code css vào đây
+
+// thứ tự import như code
+
+//Helpers tạo trước để dùng biến chung cho cả trang web
+@import "./Helpers/variable";
+@import "./Helpers/mixin";
+
+//Vendors
+//! chỉ gắn đc file có đuôi scss
+// file đuôi css thì gắn vào html
+
+//Base 
+@import "./Base/reset";
+@import "./Base/customize";
+
+//Components
+@import "./Components/button";
+
+//Layout
+@import "./Layouts/header";
+@import"./Layouts/carousel";
+@import"./Layouts/product";
+@import "./Layouts/footer";
+
+//Pages
+
+
+
+//Theme

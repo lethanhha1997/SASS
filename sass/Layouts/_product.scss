@@ -1,0 +1,183 @@
+.products {
+    position: relative;
+    width: 100%;
+    height: auto;
+    .img-products {
+        position: absolute;
+        left: 0;
+        right: 0;
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+            background-color: $color-orchid;
+        }
+        &::before {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 410px;
+            background-color: $color-orchid;
+        }
+    }
+    .row {
+        padding: 10px 8px;
+    }
+    .col-3 {
+        padding: 0 22px;
+    }
+    .card {
+        overflow: hidden;
+        border-radius: 10px;
+        transition: all 0.5s;
+        border: transparent;
+        &:hover img {
+            transition: all 1s;
+            transform: scale3d(1.07, 1.07, 1.07);
+            overflow: hidden;
+        }
+        img {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        &:hover {
+            box-shadow: rgba(0, 0, 0, 0.18) 0px 24px 18px;
+        }
+    }
+}
+.products {
+    .card-body {
+        text-align: center;
+        padding: 32px 0;
+        h6 {
+            @include styleText($fs-0, $fw-7, $color-pink-1);
+            letter-spacing: 0.03rem;
+            padding: 2px 0;
+        }
+        h4 {
+            @include styleText($fs-3, $fw-7, $color-black);
+            padding: 2px 0;
+        }
+        p {
+            @include styleText($fs-1, $fw-5, $color-black);
+            padding: 6px 0;
+        }
+    }
+}
+.space-row {
+    width: 100%;
+    height: 20px;
+}
+
+.find-couse {
+    margin-top: 130px;
+    position: relative;
+    .container {
+        width: 70%;
+        height: auto;
+    }
+    .img-findEnd {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+}
+}
+.find-content {
+    z-index: 100;
+}
+.find-img img {
+    margin-top: 30px;
+    display: block;
+    margin-left: 50px;
+    line-height: 0;
+    max-width: 100%;
+    height: auto;
+    z-index: 99999;
+}
+.form-dad {
+    padding: 10px 20px;
+    
+}
+.form-find {
+    z-index: 9999;
+    margin-left: 70px;
+    width: 80%;
+    padding: 40px 0 50px 40px;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 24px 18px;
+    background-color: $color-bgr-white;
+    border-radius: $bd-2;
+    h1 {
+        @include styleText($fs-8, $fw-7, $color-black);
+        padding: 30px 0;
+    }
+
+    .btn-pink {
+        margin-top: 40px;
+        padding: 10px 50px;
+    }
+}
+.input-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content:baseline;
+    padding: 20px 0;
+ 
+    .name {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border-radius: $radius-2;
+        padding: 9px 18px;
+        width: 42%;
+        margin-right: 20px;
+        border: 1px solid black;
+        input {
+            border: transparent;
+            width: 100%;
+        }
+        span {
+            color: $color-pink-1;
+            padding-right: 6px;
+        }
+    }
+}
+.input-english {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: $radius-2;
+    padding: 8px 16px;
+    margin-bottom: 20px;
+    width: 90%;
+    border: 1px solid black;
+    span {
+        color: $color-pink-1;
+    }
+    select {
+        border: transparent;
+        width: 160px;
+    }
+}
+.input-mess {
+    display: flex;
+    flex-direction: row;
+    border-radius: $radius-2;
+    padding: 8px 16px;
+    width: 90%;
+    border: 1px solid black;
+    span {
+        padding-top: 9px;
+        padding-left: 1px;
+        color: $color-pink-1;
+    }
+    textarea {
+        border: transparent;
+        width: 320px;
+    }
+}

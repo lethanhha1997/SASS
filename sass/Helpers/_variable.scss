@@ -1,0 +1,79 @@
+
+
+//color
+$color-white:#fff;
+$color-black:#181818;
+$color-text-black: #dcd1f3;
+$color-yellow-1: #f9d412;
+$color-pink-1:#b61984;
+$color-orchid:#dcd1f3;
+$color-bgr-white:rgba(255, 255, 255, 1);
+
+//dark color
+$color-dark-2:#121212;
+$color-dark-3:#353536;
+$color-dark-4:#212121;
+$color-blue-4:#2196f3;
+
+//font size
+$fs-0:11px;
+$fs-1: 13px;
+$fs-2: 1.1rem;
+$fs-3: 1.8rem;
+$fs-4: 70px;
+$fs-5: 1.2rem;
+$fs-6: 4.1rem;
+$fs-7: 20px;
+$fs-8: 33px;
+
+//font weight
+$fw-1: 100;
+$fw-2: 200;
+$fw-3: 300;
+$fw-4: 400;
+$fw-5: 500;
+$fw-6: 600;
+$fw-7: 700;
+
+
+//letter spacing
+$ls-1: 0.015rem;
+$ls-2: 0.03rem;
+
+//Padding: 1 rem 15px
+$pd-1: 30px;
+$pd-2: 40px;
+$pd-3: 25px;
+$pd-4: 20px;
+$pd-5: 83.5px;
+$pd-6: 8px;
+$pd-7: 60px;
+$pd-8: 11px;
+$pd-9:20px;
+
+//Margin
+$mg-1: 8px;
+$mg-2: 25px;
+$mg-3: 70px;
+$mg-4: 60px;
+
+//border
+$bd-1: 1px;
+$bd-2: 8px;
+
+// bdradius
+$radius-1:10px;
+$radius-2:20px;
+$radius-3:50px;
+
+$decoration: none;
+
+
+
+//break points
+$breakpoints: (
+    "extra-large": 1200px,
+    "large": 992px,
+    "medium": 768px,
+    "small": 576px
+);

@@ -1,0 +1,14 @@
+.btn-pink{
+    @include styleButton($color-pink-1,$pd-8,$pd-9,$bd-1 solid $color-pink-1, $radius-3);
+    @include styleText($fs-1+1,$fw-5,$color-white);
+    display: inline-block;
+    text-decoration: none;
+    &:hover{
+        background-color: $color-bgr-white; 
+        transition: all 0.3s ease;      
+    }
+    &:hover span{
+        color: $color-pink-1;
+    }
+
+}
