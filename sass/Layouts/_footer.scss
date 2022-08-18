@@ -71,3 +71,36 @@ footer{
         }
     }
 }
+@include responsive("extra-large") {
+   
+    .content-new{
+        input{
+            width: 100%;
+
+        }
+        button{
+            width: 100%;
+        }
+    }
+}
+@include responsive("large") {
+    .title-footer h5{
+        margin-top: 50px;
+    }
+    .content-new{
+        input{
+            width: 95%;
+
+        }
+        button{
+            width: 95%;
+        }
+    }
+}
+@include responsive("medium") {
+    .title-footer h5{
+        margin-top: 50px;
+    }
+}
+@include responsive("small") {}
+

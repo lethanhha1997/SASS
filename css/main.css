@@ -6,13 +6,7 @@
 
 html, body {
   font-family: "Montserrat", sans-serif;
-  min-height: 100vh;
   font-size: 14px;
-}
-
-.container-fluid {
-  width: 83%;
-  margin: 0 auto;
 }
 
 .btn-pink {
@@ -43,10 +37,7 @@ html, body {
   z-index: 100;
 }
 .nav-fixed .navbar {
-  height: 50px;
-}
-.nav-fixed .navbar .navbar-brand {
-  display: none;
+  height: 80px;
 }
 
 header .container-fluid {
@@ -55,7 +46,7 @@ header .container-fluid {
   width: 100%;
 }
 header .container-fluid .port {
-  max-width: 1260px;
+  max-width: 1240px;
   margin: auto;
 }
 header .container-fluid .port .navbar-collapse {
@@ -63,7 +54,6 @@ header .container-fluid .port .navbar-collapse {
 }
 
 .navbar {
-  padding: 0 29px !important;
   height: 80px;
 }
 .navbar img {
@@ -72,7 +62,7 @@ header .container-fluid .port .navbar-collapse {
 }
 
 .navbar-nav .nav-item {
-  padding: 8px 35px 0 0;
+  padding: 8px 37px 0 0;
 }
 .navbar-nav a {
   font-size: 13px;
@@ -118,9 +108,33 @@ header .container-fluid .port .navbar-collapse {
   color: #b61984;
 }
 
+@media screen and (max-width: 992px) {
+  .header-contact {
+    display: none;
+  }
+  header .container-fluid {
+    background-color: white;
+  }
+  header .navbar {
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+    height: 50px;
+  }
+  header .navbar-toggler {
+    background-color: transparent;
+    color: #181818;
+  }
+  header .nav-link {
+    text-align: center;
+  }
+  header .port img {
+    width: 48px;
+    height: 48px;
+  }
+}
 .about-carousel {
-  height: 700px;
-  position: relative;
+  width: 100%;
+  padding: 50px 0 40px;
 }
 .about-carousel .img-top {
   position: absolute;
@@ -128,7 +142,7 @@ header .container-fluid .port .navbar-collapse {
   top: 0;
 }
 .about-carousel .img-top img {
-  width: 100%;
+  width: 99%;
   height: auto;
   display: block;
 }
@@ -144,21 +158,20 @@ header .container-fluid .port .navbar-collapse {
 }
 .about-carousel .container-fluid {
   width: 100%;
-  position: absolute;
+  padding: 0 29px;
   top: 21px;
-  margin: 0 auto;
   z-index: 3;
 }
 .about-carousel .container-fluid .content {
+  max-width: 1210px;
+  padding: 16px 0;
   display: flex;
   justify-content: center;
+  margin: 0 auto;
 }
 
 .content-carousel {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  padding-top: 52px;
+  padding: 17% 0 15% 0;
 }
 .content-carousel .title-s {
   font-size: 1.2rem;
@@ -175,9 +188,71 @@ header .container-fluid .port .navbar-collapse {
   display: block;
   max-width: 100%;
   max-height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
+@media screen and (max-width: 1200px) {
+  .about-carousel {
+    padding: 0;
+  }
+  .about-carousel .content {
+    padding: 0;
+  }
+  .content-carousel {
+    padding: 19% 0 25% 0;
+  }
+  .content-carousel .title-l {
+    font-size: 3.5rem;
+  }
+  .content-carousel .title-s {
+    font-size: 1.1rem;
+  }
+  .img-carousel {
+    padding-top: 4%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .content-carousel {
+    padding: 10% 0;
+  }
+  .content-carousel .title-l {
+    font-size: 3.15rem;
+  }
+  .img-carousel {
+    padding-bottom: 10%;
+  }
+  .img-bottom img {
+    transform: translateY(1331px);
+  }
+}
+@media screen and (max-width: 768px) {
+  .content-carousel {
+    padding: 20% 0;
+  }
+  .content-carousel .title-l {
+    font-size: 3.15rem;
+  }
+  .img-carousel {
+    padding-bottom: 30%;
+  }
+  .img-bottom img {
+    transform: translateY(668px);
+  }
+}
+@media screen and (max-width: 576px) {
+  .content-carousel {
+    padding: 30% 0;
+  }
+  .content-carousel .title-l {
+    font-size: 3.15rem;
+  }
+  .img-carousel {
+    padding-bottom: 50%;
+  }
+  .img-bottom img {
+    transform: translateY(372px);
+  }
+}
 .products {
   position: relative;
   width: 100%;
@@ -200,6 +275,10 @@ header .container-fluid .port .navbar-collapse {
   width: 100%;
   height: 410px;
   background-color: #dcd1f3;
+}
+.products .product-man {
+  max-width: 1220px;
+  margin: 0 auto;
 }
 .products .row {
   padding: 10px 8px;
@@ -276,6 +355,8 @@ header .container-fluid .port .navbar-collapse {
 
 .find-content {
   z-index: 100;
+  max-width: 1110px;
+  margin: 0 auto;
 }
 
 .find-img img {
@@ -373,6 +454,82 @@ header .container-fluid .port .navbar-collapse {
   width: 320px;
 }
 
+@media screen and (max-width: 1200px) {
+  .products .img-products img {
+    width: 100%;
+    height: auto;
+    display: block;
+    background-color: #dcd1f3;
+  }
+  .products .img-products::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 530px;
+    background-color: #dcd1f3;
+  }
+}
+@media screen and (max-width: 992px) {
+  .products .img-products img {
+    width: 100%;
+    height: auto;
+    display: block;
+    background-color: #dcd1f3;
+  }
+  .products .img-products::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 200px;
+    background-color: #dcd1f3;
+  }
+  .form-find .input-1 {
+    flex-direction: column;
+  }
+  .form-find .input-1 .name {
+    width: 90%;
+    margin-top: 20px;
+  }
+  .btn-pink {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .products .img-products img {
+    width: 100%;
+    height: auto;
+    display: block;
+    background-color: #dcd1f3;
+  }
+  .products .img-products::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1420px;
+    background-color: #dcd1f3;
+  }
+  .form-dad {
+    padding: 0;
+  }
+  .form-find {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 576px) {
+  .products .img-products img {
+    width: 100%;
+    height: auto;
+    display: block;
+    background-color: #dcd1f3;
+  }
+  .products .img-products::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3220px;
+    background-color: #dcd1f3;
+  }
+}
 footer {
   background-image: url(../image/footer_background.jpg);
   background-size: cover;
@@ -451,4 +608,29 @@ footer .title-footer h5 {
 .content-new button:hover {
   background-color: #b61984;
   color: white;
+}
+
+@media screen and (max-width: 1200px) {
+  .content-new input {
+    width: 100%;
+  }
+  .content-new button {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .title-footer h5 {
+    margin-top: 50px;
+  }
+  .content-new input {
+    width: 95%;
+  }
+  .content-new button {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .title-footer h5 {
+    margin-top: 50px;
+  }
 }/*# sourceMappingURL=main.css.map */

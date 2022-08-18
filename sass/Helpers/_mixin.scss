@@ -10,3 +10,16 @@
     border:$bd ;
     border-radius:$radius ;
 }
+//screen: tên màng hình muốn lấy kích thước
+@mixin responsive($screen) {
+    @if (map-has-key($map: $breakpoints, $key:$screen )) {
+        // tìm thấy tên màng hình trong danh sách của $breakpoints
+        $value:map-get($map: $breakpoints, $key:$screen );
+        @media screen and (max-width: $value) {
+            @content;
+        }
+    }
+    @else{
+        @warn "sai tên màng hình";
+    }
+}
