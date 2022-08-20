@@ -38,13 +38,14 @@ html, body {
   z-index: 100;
 }
 .nav-fixed .navbar {
-  height: 80px;
+  height: 50px;
 }
 
 header .container-fluid {
   z-index: 5;
   position: fixed;
   width: 100%;
+  padding: 0;
 }
 header .container-fluid .port {
   max-width: 1240px;
@@ -132,6 +133,31 @@ header .container-fluid .port .navbar-collapse {
   header .port img {
     width: 48px;
     height: 48px;
+  }
+  .navbar-nav .nav-item {
+    padding: 0;
+    width: 50%;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 24px 18px;
+  }
+  .navbar-nav .nav-item a {
+    line-height: 30px;
+    background-color: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.18);
+  }
+  .navbar-nav .active {
+    display: none;
+  }
+}
+@media screen and (max-width: 576px) {
+  .navbar-nav .nav-item {
+    padding: 0;
+    width: 100%;
+  }
+  .navbar-nav .nav-item a {
+    background-color: white;
+  }
+  .navbar-nav .active {
+    display: none;
   }
 }
 .about-carousel {
@@ -425,9 +451,12 @@ header .container-fluid .port .navbar-collapse {
 .input-english span {
   color: #b61984;
 }
-.input-english select {
+.input-english .select {
+  width: 100%;
+}
+.input-english .select select {
   border: transparent;
-  width: 160px;
+  width: 100%;
 }
 
 .input-mess {
@@ -507,6 +536,10 @@ header .container-fluid .port .navbar-collapse {
   }
   .form-find {
     margin: 0 auto;
+  }
+  select {
+    border: transparent;
+    width: 480px;
   }
 }
 @media screen and (max-width: 576px) {
@@ -598,6 +631,9 @@ footer .title-footer h5 {
   border-radius: 20px;
   color: white;
   text-align: center;
+}
+.content-new div ::placeholder {
+  color: white;
 }
 .content-new button {
   background-color: #fff;

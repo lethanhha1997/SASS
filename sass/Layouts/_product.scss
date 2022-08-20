@@ -164,9 +164,13 @@
   span {
     color: $color-pink-1;
   }
-  select {
-    border: transparent;
-    width: 160px;
+  .select{
+    width: 100%;
+    select {
+      border: transparent;
+      width: 100%;
+  
+    }
   }
 }
 .input-mess {
@@ -236,6 +240,7 @@
     .btn-pink{
         width: 90%;
     }
+
 }
 @include responsive("medium") {
     .products {
@@ -260,6 +265,10 @@
       }
       .form-find{
         margin: 0 auto;
+      }
+      select {
+        border: transparent;
+        width: 480px;
       }
 }
 @include responsive("small") {
