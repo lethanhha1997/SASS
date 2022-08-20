@@ -77,17 +77,15 @@
 } 
 @include responsive("large") {
     .content-carousel{
-        padding: 10% 0;
+        padding: 12% 0 10%;
         .title-l{
-            font-size: 3.15rem ;
+            font-size: 3.19rem ;
         }
     }
     .img-carousel{
         padding-bottom: 10%;
     }
-    // .img-bottom{
-       
-    // }
+
 }
 @include responsive("medium") {
     .content-carousel{
@@ -99,11 +97,7 @@
     .img-carousel{
         padding-bottom: 30%;
     }
-    // .img-bottom{
-    //     // img{
-    //     //     // transform: translateY(668px);
-    //     // }
-    // }
+
 }
 @include responsive("small") {
     .content-carousel{
@@ -115,10 +109,4 @@
     .img-carousel{
         padding-bottom: 50%;
     }
-    // .img-bottom{
-    //     img{
-    //         // transform: translateY(372px);
-    //     }
-    // }
-
 }  

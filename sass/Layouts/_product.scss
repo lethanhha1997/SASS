@@ -17,13 +17,14 @@
       content: "";
       display: block;
       width: 100%;
-      height: 410px;
+      height: 425px;
       background-color: $color-orchid;
     }
   }
   .product-man {
     max-width: 1220px;
     margin: 0 auto;
+    padding-top: 14px;
   }
   .row {
     padding: 10px 8px;
@@ -64,7 +65,7 @@
     }
     p {
       @include styleText($fs-1, $fw-5, $color-black);
-      padding: 6px 0;
+      padding: 6px 24px;
     }
   }
 }
@@ -95,6 +96,7 @@
   z-index: 100;
   max-width: 1110px;
   margin: 0 auto;
+  padding-bottom: 30px
 }
 .find-img img {
   margin-top: 30px;
@@ -178,14 +180,19 @@
   width: 90%;
   border: 1px solid black;
   span {
-    padding-top: 9px;
+    padding-top: 5px;
     padding-left: 1px;
     color: $color-pink-1;
   }
+
   textarea {
     border: transparent;
-    width: 320px;
- 
+    width: 100%;
+    margin-left: 5px;
+    &:focus{
+      background-color: white;
+      outline: none !important;
+    }
   }
 }
 

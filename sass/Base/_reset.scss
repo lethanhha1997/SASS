@@ -9,6 +9,6 @@ html,body{
     font-size: $fs-1+1;
     scroll-behavior: none;
 }
-textarea:focus, input:focus, select:focus{
+input:focus, select:focus{
     outline: none;
 }

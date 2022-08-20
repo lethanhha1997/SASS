@@ -48,37 +48,32 @@ footer{
         display: block;
         @include styleText($fs-1 +1 ,$fw-4,$color-white);
         padding: 7px 0;
+        text-decoration: none;
         border-bottom: 1px solid rgba(0,0,0,.1);
+        &:hover{
+            opacity: 0.8;
+        }
     }
 }
 .content-new{
     div{
-        padding: 26px 0 16px;
-        
+        padding: 26px 0 16px;        
         input{
             @include styleButton($color-pink-1,$pd-8,$pd-2 +2,$bd-1 solid rgba(0,0,0,.1) ,$radius-2);
             color: white;
             text-align: center;
-            // &:focus-visible{
-            //     border: none;
-            //   }
-
         }
         ::placeholder{
             color: white;
         }
-       
-
     }
     .btn-footer{
         @include styleButton($color-white,$pd-0,$pd-0 ,$bd-1 solid white ,$radius-2);
         font-weight: 600;
-        transition: all 300ms ease;
-        
+        transition: all 300ms ease;     
         display: inline-block;
         text-decoration: none;
-        width: 90%;
-        
+        width: 90%;     
         a{
           @include styleText($fs-1,$fw-5,$color-white);
             display: block;
@@ -87,52 +82,45 @@ footer{
             position: relative;
             transition: all .35s;
             color: $color-black;
-            padding: 10px 4px;
-    
+            padding: 10px 4px;  
+            span{
+               position: relative;
+               z-index: 2;
+             }
+             &::before{
+               position: absolute;
+               content: "";
+               top:  50%;
+               right: 0;
+               width: 100%;
+               height: 0;
+               background-color:  $color-pink-1; 
+               transition: all .3s;
+               border-bottom-right-radius:50px;
+               border-bottom-left-radius:50px;  
+             }
+             &:after{
+               position: absolute;
+               content: "";
+               bottom: 50%;
+               right: 0;
+               width: 100%;
+               height:0;
+               background-color:  $color-pink-1;
+               transition: all .3s;
+               border-top-right-radius:50px;
+               border-top-left-radius:50px;
+             }     
+             &:hover{
+               color: $color-white;
+             }
+             &:hover::before{
+               height: 50%;
+             }
+             &:hover:after{          
+               height:  50%;
+             }
         }
-        a span{
-            position: relative;
-            z-index: 2;
-          }
-          a::before{
-            position: absolute;
-            content: "";
-            top:  50%;
-            right: 0;
-            width: 100%;
-            height: 0;
-            background-color:  $color-pink-1;     
-            transition: all .3s;
-            border-bottom-right-radius:50px;
-            border-bottom-left-radius:50px;
-    
-          }
-          a:after{
-            position: absolute;
-            content: "";
-            bottom: 50%;
-            right: 0;
-            width: 100%;
-
-            height:0;
-            background-color:  $color-pink-1;
-            transition: all .3s;
-            border-top-right-radius:50px;
-            border-top-left-radius:50px;
-          }
-      
-          a:hover{
-            color: $color-white;
-          }
-          a:hover::before{
-            width: 100%;
-            height: 50%;
-          }
-          a:hover:after{
-            width: 100%;
-            
-            height:  50%;
-          }
     }
 }
 @include responsive("extra-large") {

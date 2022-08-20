@@ -98,6 +98,13 @@ header {
 
 @include responsive("large") {
   //@content chứa code header
+  .nav-fixed {
+    .navbar-brand{
+      img{
+        display: block;
+      }
+    }
+  }
   .header-contact {
     display: none;
   }
