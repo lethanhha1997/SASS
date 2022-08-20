@@ -39,7 +39,6 @@
     &:hover img {
       transition: all 1s;
       transform: scale3d(1.07, 1.07, 1.07);
-      overflow: hidden;
     }
     img {
       border-top-left-radius: 10px;
@@ -124,7 +123,6 @@
 
   .btn-pink {
     margin-top: 40px;
-    padding: 10px 50px;
   }
 }
 .input-1 {
@@ -168,8 +166,7 @@
     width: 100%;
     select {
       border: transparent;
-      width: 100%;
-  
+      width: 100%; 
     }
   }
 }
@@ -188,6 +185,7 @@
   textarea {
     border: transparent;
     width: 320px;
+ 
   }
 }
 

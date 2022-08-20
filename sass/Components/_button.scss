@@ -1,14 +1,70 @@
 .btn-pink{
-    @include styleButton($color-pink-1,$pd-8,$pd-9,$bd-1 solid $color-pink-1, $radius-3);
-    @include styleText($fs-1+1,$fw-5,$color-white);
+    @include styleButton($color-pink-1,$pd-0,$pd-0,$bd-1 solid $color-pink-1, $radius-3);
+   
     display: inline-block;
     text-decoration: none;
-    &:hover{
-        background-color: $color-bgr-white; 
-        transition: all 0.3s ease;      
+    width: 50%;
+    
+    a{
+      @include styleText($fs-1,$fw-5,$color-white);
+        display: block;
+        text-decoration: none;
+        text-align: center;
+        position: relative;
+        transition: all .35s;
+        color: white;
+        padding: 10px 4px;
+
     }
-    &:hover span{
+    a span{
+        position: relative;
+        z-index: 2;
+      }
+      a::before{
+        position: absolute;
+        content: "";
+        top:  50%;
+        right: 0;
+        width: 100%;
+        height: 0;
+        background-color:  white;     
+        transition: all .3s;
+        border-bottom-right-radius:50px;
+        border-bottom-left-radius:50px;
+
+      }
+      a:after{
+        position: absolute;
+        content: "";
+        bottom: 50%;
+        right: 0;
+        width: 100%;
+        height:0;
+        background-color:  white;
+        transition: all .3s;
+        border-top-right-radius:50px;
+        border-top-left-radius:50px;
+      }
+  
+      a:hover{
         color: $color-pink-1;
-    }
+      }
+      a:hover::before{
+        width: 100%;
+        height: 50%;
+      }
+      a:hover:after{
+        width: 100%;
+        
+        height:  50%;
+      }
+    // &:hover{
+    //     background-color: $color-white; 
+    //     transition: all 300ms ease;      
+
+    // }
+    // &:hover span{
+    //     color: $color-pink-1;
+    // }
 
 }

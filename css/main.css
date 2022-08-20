@@ -10,23 +10,69 @@ html, body {
   scroll-behavior: none;
 }
 
+textarea:focus, input:focus, select:focus {
+  outline: none;
+}
+
 .btn-pink {
   background-color: #b61984;
-  padding: 11px 20px;
+  padding: 0px 0px;
   border: 1px solid #b61984;
   border-radius: 50px;
-  font-size: 14px;
-  font-weight: 500;
-  color: #fff;
   display: inline-block;
   text-decoration: none;
+  width: 50%;
 }
-.btn-pink:hover {
-  background-color: rgb(255, 255, 255);
-  transition: all 0.3s ease;
+.btn-pink a {
+  font-size: 13px;
+  font-weight: 500;
+  color: #fff;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  position: relative;
+  transition: all 0.35s;
+  color: white;
+  padding: 10px 4px;
 }
-.btn-pink:hover span {
+.btn-pink a span {
+  position: relative;
+  z-index: 2;
+}
+.btn-pink a::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  right: 0;
+  width: 100%;
+  height: 0;
+  background-color: white;
+  transition: all 0.3s;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+.btn-pink a:after {
+  position: absolute;
+  content: "";
+  bottom: 50%;
+  right: 0;
+  width: 100%;
+  height: 0;
+  background-color: white;
+  transition: all 0.3s;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+}
+.btn-pink a:hover {
   color: #b61984;
+}
+.btn-pink a:hover::before {
+  width: 100%;
+  height: 50%;
+}
+.btn-pink a:hover:after {
+  width: 100%;
+  height: 50%;
 }
 
 .nav-fixed {
@@ -40,6 +86,9 @@ html, body {
 .nav-fixed .navbar {
   height: 50px;
 }
+.nav-fixed .navbar-brand img {
+  display: none;
+}
 
 header .container-fluid {
   z-index: 5;
@@ -49,6 +98,8 @@ header .container-fluid {
 }
 header .container-fluid .port {
   max-width: 1240px;
+  padding-top: 4px;
+  padding-left: 6px;
   margin: auto;
 }
 header .container-fluid .port .navbar-collapse {
@@ -66,6 +117,9 @@ header .container-fluid .port .navbar-collapse {
 
 .navbar-nav .nav-item {
   padding: 8px 37px 0 0;
+}
+.navbar-nav .pd0 {
+  padding-right: 0;
 }
 .navbar-nav a {
   font-size: 13px;
@@ -94,9 +148,12 @@ header .container-fluid .port .navbar-collapse {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  width: 28%;
 }
 .header-contact .icon-mxh {
-  margin-left: 16px;
+  display: flex;
+  justify-content: flex-end;
+  width: 15%;
 }
 .header-contact .icon-mxh a {
   font-size: 13px;
@@ -315,7 +372,6 @@ header .container-fluid .port .navbar-collapse {
 .products .card:hover img {
   transition: all 1s;
   transform: scale3d(1.07, 1.07, 1.07);
-  overflow: hidden;
 }
 .products .card img {
   border-top-left-radius: 10px;
@@ -410,7 +466,6 @@ header .container-fluid .port .navbar-collapse {
 }
 .form-find .btn-pink {
   margin-top: 40px;
-  padding: 10px 50px;
 }
 
 .input-1 {
@@ -635,17 +690,67 @@ footer .title-footer h5 {
 .content-new div ::placeholder {
   color: white;
 }
-.content-new button {
+.content-new .btn-footer {
   background-color: #fff;
-  padding: 11px 83.5px;
+  padding: 0px 0px;
   border: 1px solid white;
   border-radius: 20px;
   font-weight: 600;
   transition: all 300ms ease;
+  display: inline-block;
+  text-decoration: none;
+  width: 90%;
 }
-.content-new button:hover {
+.content-new .btn-footer a {
+  font-size: 13px;
+  font-weight: 500;
+  color: #fff;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  position: relative;
+  transition: all 0.35s;
+  color: #181818;
+  padding: 10px 4px;
+}
+.content-new .btn-footer a span {
+  position: relative;
+  z-index: 2;
+}
+.content-new .btn-footer a::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  right: 0;
+  width: 100%;
+  height: 0;
   background-color: #b61984;
-  color: white;
+  transition: all 0.3s;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+.content-new .btn-footer a:after {
+  position: absolute;
+  content: "";
+  bottom: 50%;
+  right: 0;
+  width: 100%;
+  height: 0;
+  background-color: #b61984;
+  transition: all 0.3s;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+}
+.content-new .btn-footer a:hover {
+  color: #fff;
+}
+.content-new .btn-footer a:hover::before {
+  width: 100%;
+  height: 50%;
+}
+.content-new .btn-footer a:hover:after {
+  width: 100%;
+  height: 50%;
 }
 
 @media screen and (max-width: 1200px) {
